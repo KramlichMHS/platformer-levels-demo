@@ -128,7 +128,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, lo
     level2()
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (jumpCount < 1) {
+    if (jumpCount < 2) {
         jumpCount += 1
         mySprite.vy = -125
     }
